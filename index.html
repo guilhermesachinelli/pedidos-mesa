@@ -10,12 +10,15 @@
 
 <body>
     <div>
-        <div class="Input-container">
+        <div class="input-container">
             <input type="text" id="client" placeholder="Cliente">
             <input type="text" id="table" placeholder="Mesa">
             <input type="text" id="description" placeholder="Descrição">
-            <button onclick="createClient()">Cadastrar</button>
+            <div id="msg"></div>
+            <button id="register" onclick="createClient()">Cadastrar</button>
+            <button id="edit" onclick="attClient()" class="hidden">Editar Cliente</button>
         </div>
+        <div class="client-content" id="client-content"></div>
     </div>
     <script src="./assets/js/script.index.js"></script>
 </body>
