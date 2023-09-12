@@ -39,6 +39,9 @@ class ClientList {
     deleteClient(id) {
         return (this.clientList = this.clientList.filter((client) => client.id != id));
     }
+    countClients() {
+        return this.clientList.length;
+    }
 }
 const clientList = new ClientList();
 function createClient() {
@@ -63,6 +66,8 @@ function showClients() {
         </div>
         `
         content.innerHTML += clientDiv;
+        const conunt = clientList.countClients()
+        document.getElementById("count").innerHTML = `Total: ${conunt   }`;
     });
 }
 function anyInputs() {

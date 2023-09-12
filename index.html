@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <div>
+    <div class="cont">
         <div class="input-container">
+            <h1>Cadastros de Pedido</h1>
             <input type="text" id="client" placeholder="Cliente">
             <input type="text" id="table" placeholder="Mesa">
             <input type="text" id="description" placeholder="Descrição">
@@ -18,7 +19,11 @@
             <button id="register" onclick="createClient()">Cadastrar</button>
             <button id="edit" onclick="attClient()" class="hidden">Editar Cliente</button>
         </div>
-        <div class="client-content" id="client-content"></div>
+        <div class="client-content">
+            <h1 id="count"></h1>
+            <div id="client-content">
+            </div>
+        </div>
     </div>
     <script src="./assets/js/script.index.js"></script>
 </body>
